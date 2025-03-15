@@ -1,5 +1,5 @@
-import products from '.js/products.js';
-import cart from '.js/cart.js';
+import products from './js/products.js';
+import cart from './js/cart.js';
 
 let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
