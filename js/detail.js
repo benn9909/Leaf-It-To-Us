@@ -6,7 +6,7 @@ let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
 
 const loadTemplate = () => {
-    fetch('js/template.html')
+    fetch('template.html')
     .then(response => response.text())
     .then(html => {
         app.innerHTML = html;
