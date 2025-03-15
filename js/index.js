@@ -1,5 +1,5 @@
-import products from '/products.js';
-import cart from './cart.js';
+import products from 'js/products.js';
+import cart from 'js/cart.js';
 
 let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
@@ -27,7 +27,7 @@ const initApp = () => {
          let newProduct = document.createElement('div');
          newProduct.classList.add('item');
          newProduct.innerHTML = 
-         `<a href="/detail.html?id=${product.id}">
+         `<a href="js/detail.html?id=${product.id}">
              <img src="${product.image}">
          </a>
          <h2>${product.name}</h2>
