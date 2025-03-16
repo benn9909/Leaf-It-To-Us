@@ -6,6 +6,15 @@ const cart = () => {
     let body = document.querySelector('body');
     let closeCart = document.querySelector('.close');
     let cart = [];
+    const makeSuffix = (num) => {
+        if (num >= 1000000) {
+            return (num / 1000000) + "M";
+        } else if (num >= 1000) {
+            return (num / 1000) + "K";
+        } else {
+            return num; 
+        }
+    };
 
     // open and close tab
     iconCart.addEventListener('click', () => {
@@ -51,7 +60,7 @@ const cart = () => {
                     <div class="name">
                     ${info.name}
                     </div>
-                    <div class="totalPrice">$${info.price * item.quantity}</div>
+                    <div class="totalPrice">${makeSuffix(info.price * item.quantity)}₫</div>
                     <div class="quantity">
                         <span class="minus" data-id="${info.id}"><</span>
                         <span>${item.quantity}</span>

@@ -593,6 +593,78 @@ h1, h2, h3, h4, h5,
         .site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
           padding-left: 15px !important; }
 
+/* Restrict styles to only affect the menu */
+.menuContainer {
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar */
+.menuContainer .site-navbar {
+  margin-bottom: 0px;
+  z-index: 1999;
+  position: absolute;
+  top: 0;
+  top: 15px;
+  width: 100%;
+  background: transparent;
+}
+
+.menuContainer .site-navbar .site-logo a {
+  font-size: 20px;
+  color: #21325E !important;
+}
+
+.menuContainer .site-navbar .site-navigation .site-menu {
+  margin-bottom: 0;
+}
+
+.menuContainer .site-navbar .site-navigation .site-menu > li > a {
+  padding: 5px 10px;
+  color: #000;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.menuContainer .site-navbar .site-navigation .site-menu > li > a:hover {
+  color: #21325E;
+}
+
+/* Mobile Menu */
+.menuContainer .site-mobile-menu {
+  width: 300px;
+  position: fixed;
+  right: 0;
+  z-index: 2000;
+  padding-top: 20px;
+  background: #fff;
+  height: calc(100vh);
+  transform: translateX(110%);
+}
+
+.menuContainer .offcanvas-menu .site-mobile-menu {
+  transform: translateX(0%);
+}
+
+/* Top Bar */
+.menuContainer .top-bar {
+  background: transparent !important;
+  font-size: 13px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.menuContainer .top-bar a {
+  color: #000;
+}
+
+/* Reset styles for the rest of the site */
+.menuContainer * {
+  all: unset;
+}
+
+
 .sticky-wrapper {
   position: absolute;
   z-index: 100;

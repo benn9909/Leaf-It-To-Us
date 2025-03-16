@@ -95,16 +95,32 @@ body.activeTabCart .cartTab{
 body.activeTabCart .container{
     transform: translateX(-250px);
 }
+
+/* .totalPrice {
+    grid-row: 3;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: #353432;
+    color: #eee;
+    border-top: 1px solid #555;
+} */
 /*  */
 
 .listProduct .item img{
     width: 90%;
     filter: drop-shadow(0 50px 20px #0009);
 }
-.listProduct{
+.listProduct {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.listProduct .item:nth-child(-n+3) {
+    margin-top: 250px; /* Adjust the value as needed */
+    margin-bottom: 250px; /* Adjust the value as needed */
 }
 .listProduct .item{
     background-color: #EEEEE6;
@@ -116,7 +132,7 @@ body.activeTabCart .container{
     font-size: large;
 }
 .listProduct .item .price{
-    letter-spacing: 7px;
+    letter-spacing: 2px;
     font-size: small;
 }
 .listProduct .item button{
