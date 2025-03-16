@@ -6,7 +6,7 @@ let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
 
 const loadTemplate = () => {
-    fetch('/template.html')
+    fetch('template.html')
     .then(response => response.text())
     .then(html => {
         app.innerHTML = html;
@@ -38,7 +38,7 @@ const initApp = () => {
         let newProduct = document.createElement('div');
         newProduct.classList.add('item');
         newProduct.innerHTML = 
-        `<a href="/detail.html?id=${product.id}">
+        `<a href="detail.html?id=${product.id}">
             <img src="${product.image}">
         </a>
         <h2>${product.name}</h2>
