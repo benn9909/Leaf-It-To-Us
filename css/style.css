@@ -14,7 +14,7 @@ body {
   color: #818181;
   font-weight: 300;
   font-size: 15px;
-  background: #EEEEEE; }
+  background: #fff5e6ff; }
   body:before {
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
@@ -63,6 +63,18 @@ h1, h2, h3, h4, h5,
 .text-black {
   color: #000 !important; }
 
+.text-donate-boxes {
+  color: #DDE5B6 !important
+}
+
+.align-center {
+  text-align: center
+}
+
+.text-donate-boxes-peripheral {
+  color: #F8EACC !important
+}
+
 .bg-black {
   background: #000 !important; }
 
@@ -102,6 +114,12 @@ h1, h2, h3, h4, h5,
     outline: none;
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
+  .btn.btn-beige {
+    background-color: #5C4033;
+    color: #fff;
+    height:50px;
+    width: 100%;
+  }
   .btn.btn-black {
     color: #fff;
     background-color: #000; }
@@ -280,7 +298,7 @@ h1, h2, h3, h4, h5,
   .ul-check.success li:before {
     color: #8bc34a; }
   .ul-check.primary li:before {
-    color: #21325E; }
+    color: #fff; }
 
 .select-wrap, .wrap-icon {
   position: relative; }
@@ -1738,8 +1756,13 @@ h1, h2, h3, h4, h5,
   .ft-feature-1 p {
     color: #737373; }
 
+.mt-thing {
+  margin-top: 300px;
+}
 .box-with-humber {
-  position: relative; }
+  background-color: #556B41;
+  position: relative;
+  border-radius: 20px; }
   .box-with-humber h2 {
     font-size: 18px; }
   .box-with-humber .number-behind {
