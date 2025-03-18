@@ -64,7 +64,18 @@ h1, h2, h3, h4, h5,
   color: #000 !important; }
 
 .text-donate-boxes {
-  color: #DDE5B6 !important
+  color: #DDE5B6 !important;
+  font-size: 25px !important;
+}
+
+.text-donate-boxes-special {
+  color: #DDE5B6 !important;
+  font-size: 23px !important;
+}
+
+.text-price {
+  font-size: 20px !important;
+  color: #F8EACC !important
 }
 
 .align-center {
@@ -72,7 +83,8 @@ h1, h2, h3, h4, h5,
 }
 
 .text-donate-boxes-peripheral {
-  color: #F8EACC !important
+  color: #F8EACC !important;
+  font-size: 16px !important;
 }
 
 .bg-black {
@@ -1758,7 +1770,7 @@ h1, h2, h3, h4, h5,
     color: #737373; }
 
 .mt-thing {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 .box-with-humber {
   background-color: #556B41;
