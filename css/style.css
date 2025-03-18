@@ -176,7 +176,8 @@ h1, h2, h3, h4, h5,
   border-top: 1px solid #edf0f5 !important; }
 
 .site-footer {
-  padding: 4em 0; }
+  padding: 4em 0; 
+  background-color: #E9F2E0;}
   @media (min-width: 768px) {
     .site-footer {
       padding: 8em 0; } }
@@ -1857,3 +1858,30 @@ h1, h2, h3, h4, h5,
 
 .subcription-form button {
   border-radius: 0px 4px 4px 0px !important; }
+
+  .box-with-humber {
+    position: relative;  /* Needed for absolute positioning of ::before */
+    background-color: #5b6b43; /* Slight greenish background */
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.box-with-humber::before {
+    content: "";
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    width: 150px; /* Adjust size */
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.85) 10%, rgba(0, 0, 0, 0) 70%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none; /* Prevents blocking interactions */
+    z-index: 0;
+}
+
+.box-with-humber * {
+    position: relative;
+    z-index: 1; /* Ensures text, image, and button are above the effect */
+}
