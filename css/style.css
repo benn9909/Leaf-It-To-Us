@@ -1882,7 +1882,7 @@ h1, h2, h3, h4, h5,
 .box-with-humber::before {
     content: "";
     position: absolute;
-    top: 41%;
+    top: 43%;
     left: 50%;
     width: 150px; /* Adjust size */
     height: 150px;
@@ -1896,4 +1896,8 @@ h1, h2, h3, h4, h5,
 .box-with-humber * {
     position: relative;
     z-index: 1; /* Ensures text, image, and button are above the effect */
+}
+
+.vn-box::before {
+  top: 47% !important; 
 }
