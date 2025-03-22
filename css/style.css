@@ -358,7 +358,8 @@ h1, h2, h3, h4, h5,
   .site-navbar .site-logo {
     position: relative;
     left: 0;
-    top: -5px; }
+    top: -5px; 
+    white-space: nowrap;}
     .site-navbar .site-logo a {
       font-size: 20px; }
   .site-navbar .site-navigation .site-menu {
@@ -1900,4 +1901,17 @@ h1, h2, h3, h4, h5,
 
 .vn-box::before {
   top: 47% !important; 
+}
+
+.logo-container {
+  display: flex; /* Aligns items in a row */
+  align-items: center; /* Centers vertically */
+  gap: 10px; /* Space between logo & text */
+}
+
+/* Logo Image */
+.logo {
+  width: auto; /* Keeps aspect ratio */
+  max-height: 70px; /* Ensures it scales properly */
+  white-space: nowrap;
 }
