@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     left: 0;
     top: -5px; 
-    white-space: nowrap;}
+    white-space: nowrap !important;}
     .site-navbar .site-logo a {
       font-size: 20px; }
   .site-navbar .site-navigation .site-menu {
@@ -1911,7 +1911,7 @@ h1, h2, h3, h4, h5,
 
 /* Logo Image */
 .logo {
-  width: auto; /* Keeps aspect ratio */
-  max-height: 70px; /* Ensures it scales properly */
-  white-space: nowrap;
-} /* hello */
+  width: auto !important; /* Keeps aspect ratio */
+  max-height: 70px !important; /* Ensures it scales properly */
+  white-space: nowrap !important;
+}
